@@ -5,7 +5,7 @@ contract TaskMaster {
   mapping (address => uint) public balances; // balances of everyone
   address public owner; // owner of the contract
 
-  function TaskMaster() public {
+  constructor() public {
     owner = msg.sender;
     balances[msg.sender] = 10000;
   }
